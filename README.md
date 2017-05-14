@@ -26,12 +26,11 @@ Here is for instance a partial content of the exemple:
     "hello.exe/puts":
     - [ 0, "0x000566:   68 00 00 00 00          pushq  $0x0" ]    # This source line is not covered
 
-In order to push a coverage file, you need a github account
-(login `<github_user>` below) and the coveralls-push.py script.
-
 For instance, push the example with:
 
-    $ env COV_USER=<github_user> ./coveralls-push examples-hello.yml
+    $ ./coveralls-push examples-hello.yml
+    ...
+    Password for 'https://coveralls-push@github.com': <enter here the coveralls-push password>
     ...
     Succesfully pushed coverage
     Identifier: Job #11.1
@@ -40,12 +39,12 @@ For instance, push the example with:
 You can then browse your coverage, here at:
 https://coveralls.io/jobs/25749502
 
-NOTE: your github account password may be requested by
-your git client if not already configured.
+One can push as its own github account login with:
 
-NOTE: one must be registered as contributor to
-the github  coveralls-push project in order to be able
-to push the sources and coverage information.
+    $ env COV_USER=<github_login> ./coveralls-push examples-hello.yml
+    ...
+In this case the github user must be a collaborator
+of the coveralls-push repository.
 
 Refer to github coveralls-push doc at:
 https://guillon.github.io/coveralls-push
