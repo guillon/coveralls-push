@@ -65,7 +65,10 @@ for symbol in incov:
     })
     data_filename = os.path.join(files_dir, filename)
     logging.debug("Create data filename: %s" % (data_filename))
-    os.makedirs(os.path.dirname(data_filename))
+    try:
+        os.makedirs(os.path.dirname(data_filename))
+    except:
+        pass
     with open(data_filename, "w") as out:
         out.write(source)
 

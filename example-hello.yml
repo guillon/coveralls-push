@@ -1,0 +1,25 @@
+"hello.exe/main":
+  - [ null, "// file hello.exe" ]  # This source line is not applicable
+  - [ null, "// symbol main" ]
+  - [ null, "// " ]
+  - [ null, "// hello.exe:     file format elf64-x86-64" ]
+  - [ null, "// " ]
+  - [ null, "// " ]
+  - [ null, "// Disassembly of section .text:" ]
+  - [ null, "// " ]
+  - [ null, "// 0000000000400526 <main>:" ]
+  - [ 1, "0x400526:	55                   	push   %rbp" ]
+  - [ 1, "0x400527:	48 89 e5             	mov    %rsp,%rbp" ]
+  - [ 1, "0x40052a:	48 83 ec 10          	sub    $0x10,%rsp" ]
+  - [ 1, "0x40052e:	89 7d fc             	mov    %edi,-0x4(%rbp)" ]
+  - [ 1, "0x400531:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)" ]
+  - [ 1, "0x400535:	bf d4 05 40 00       	mov    $0x4005d4,%edi" ]
+  - [ 1, "0x40053a:	e8 c1 fe ff ff       	callq  400400 <puts@plt>" ]
+  - [ 1, "0x40053f:	b8 00 00 00 00       	mov    $0x0,%eax" ]
+  - [ 1, "0x400544:	c9                   	leaveq " ]
+  - [ 1, "0x400545:	c3                   	retq   " ]
+"hello.exe/puts":
+  - [ null, "// 0000000000000560 <puts@plt>" ]
+  - [ 3, "0x000560:   ff 25 b2 0a 20 00       jmpq   *0x200ab2(%rip)" ]   # This source line is covered 3 times
+  - [ 0, "0x000566:   68 00 00 00 00          pushq  $0x0" ]              # This source line is not covered
+  - [ 0, "0x000556b:   e9 e0 ff ff ff          jmpq   550 <.plt>" ]
