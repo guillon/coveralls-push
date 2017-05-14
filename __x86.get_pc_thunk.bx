@@ -1,0 +1,3 @@
+// symbol __x86.get_pc_thunk.bx
+// 0xf6ffd4a0:	 mov	 ebx, dword ptr [esp]
+// 0xf6ffd4a3:	 ret	 
