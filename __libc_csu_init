@@ -1,0 +1,33 @@
+// symbol __libc_csu_init
+// 0xf6ffd6a0:	 push	 ebp
+// 0xf6ffd6a1:	 push	 edi
+// 0xf6ffd6a2:	 push	 esi
+// 0xf6ffd6a3:	 push	 ebx
+// 0xf6ffd6a4:	 call	 0xf6ffd4a0
+// 0xf6ffd6a9:	 add	 ebx, 0x1957
+// 0xf6ffd6af:	 sub	 esp, 0xc
+// 0xf6ffd6b2:	 mov	 ebp, dword ptr [esp + 0x20]
+// 0xf6ffd6b6:	 lea	 esi, dword ptr [ebx - 0x110]
+// 0xf6ffd6bc:	 call	 0xf6ffd3e0
+// 0xf6ffd6c1:	 lea	 eax, dword ptr [ebx - 0x114]
+// 0xf6ffd6c7:	 sub	 esi, eax
+// 0xf6ffd6c9:	 sar	 esi, 2
+// 0xf6ffd6cc:	 test	 esi, esi
+// 0xf6ffd6ce:	 je	 0xf6ffd6f5
+// 0xf6ffd6d0:	 xor	 edi, edi
+// 0xf6ffd6d2:	 lea	 esi, dword ptr [esi]
+// 0xf6ffd6d8:	 sub	 esp, 4
+// 0xf6ffd6db:	 push	 dword ptr [esp + 0x2c]
+// 0xf6ffd6df:	 push	 dword ptr [esp + 0x2c]
+// 0xf6ffd6e3:	 push	 ebp
+// 0xf6ffd6e4:	 call	 dword ptr [ebx + edi*4 - 0x114]
+// 0xf6ffd6eb:	 add	 edi, 1
+// 0xf6ffd6ee:	 add	 esp, 0x10
+// 0xf6ffd6f1:	 cmp	 esi, edi
+// 0xf6ffd6f3:	 jne	 0xf6ffd6d8
+// 0xf6ffd6f5:	 add	 esp, 0xc
+// 0xf6ffd6f8:	 pop	 ebx
+// 0xf6ffd6f9:	 pop	 esi
+// 0xf6ffd6fa:	 pop	 edi
+// 0xf6ffd6fb:	 pop	 ebp
+// 0xf6ffd6fc:	 ret	 

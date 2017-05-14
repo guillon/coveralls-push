@@ -1,0 +1,58 @@
+// symbol main
+// 0xf6ffd5e2:	 lea	 ecx, dword ptr [esp + 4]
+// 0xf6ffd5e6:	 and	 esp, 0xfffffff0
+// 0xf6ffd5e9:	 push	 dword ptr [ecx - 4]
+// 0xf6ffd5ec:	 push	 ebp
+// 0xf6ffd5ed:	 mov	 ebp, esp
+// 0xf6ffd5ef:	 push	 ebx
+// 0xf6ffd5f0:	 push	 ecx
+// 0xf6ffd5f1:	 sub	 esp, 0x10
+// 0xf6ffd5f4:	 call	 0xf6ffd4a0
+// 0xf6ffd5f9:	 add	 ebx, 0x1a07
+// 0xf6ffd5ff:	 mov	 dword ptr [ebp - 0xc], 0
+// 0xf6ffd606:	 jmp	 0xf6ffd619
+// 0xf6ffd608:	 sub	 esp, 0xc
+// 0xf6ffd60b:	 push	 0x78
+// 0xf6ffd60d:	 call	 0xf6ffd440
+// 0xf6ffd612:	 add	 esp, 0x10
+// 0xf6ffd615:	 add	 dword ptr [ebp - 0xc], 1
+// 0xf6ffd619:	 cmp	 dword ptr [ebp - 0xc], 9
+// 0xf6ffd61d:	 jle	 0xf6ffd608
+// 0xf6ffd61f:	 mov	 dword ptr [ebp - 0xc], 0
+// 0xf6ffd626:	 jmp	 0xf6ffd639
+// 0xf6ffd628:	 sub	 esp, 0xc
+// 0xf6ffd62b:	 push	 0x79
+// 0xf6ffd62d:	 call	 0xf6ffd440
+// 0xf6ffd632:	 add	 esp, 0x10
+// 0xf6ffd635:	 add	 dword ptr [ebp - 0xc], 1
+// 0xf6ffd639:	 cmp	 dword ptr [ebp - 0xc], 4
+// 0xf6ffd63d:	 jle	 0xf6ffd628
+// 0xf6ffd63f:	 sub	 esp, 0xc
+// 0xf6ffd642:	 push	 1
+// 0xf6ffd644:	 call	 0xf6ffd5d0
+// 0xf6ffd649:	 add	 esp, 0x10
+// 0xf6ffd64c:	 test	 eax, eax
+// 0xf6ffd64e:	 je	 0xf6ffd662
+// 0xf6ffd650:	 sub	 esp, 0xc
+// 0xf6ffd653:	 lea	 eax, dword ptr [ebx - 0x18e0]
+// 0xf6ffd659:	 push	 eax
+// 0xf6ffd65a:	 call	 0xf6ffd420
+// 0xf6ffd65f:	 add	 esp, 0x10
+// 0xf6ffd662:	 sub	 esp, 0xc
+// 0xf6ffd665:	 push	 0
+// 0xf6ffd667:	 call	 0xf6ffd5d0
+// 0xf6ffd66c:	 add	 esp, 0x10
+// 0xf6ffd66f:	 test	 eax, eax
+// 0xf6ffd671:	 je	 0xf6ffd685
+// 0xf6ffd673:	 sub	 esp, 0xc
+// 0xf6ffd676:	 lea	 eax, dword ptr [ebx - 0x18de]
+// 0xf6ffd67c:	 push	 eax
+// 0xf6ffd67d:	 call	 0xf6ffd420
+// 0xf6ffd682:	 add	 esp, 0x10
+// 0xf6ffd685:	 mov	 eax, 0
+// 0xf6ffd68a:	 lea	 esp, dword ptr [ebp - 8]
+// 0xf6ffd68d:	 pop	 ecx
+// 0xf6ffd68e:	 pop	 ebx
+// 0xf6ffd68f:	 pop	 ebp
+// 0xf6ffd690:	 lea	 esp, dword ptr [ecx - 4]
+// 0xf6ffd693:	 ret	 

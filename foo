@@ -1,0 +1,8 @@
+// symbol foo
+// 0xf6ffd5d0:	 push	 ebp
+// 0xf6ffd5d1:	 mov	 ebp, esp
+// 0xf6ffd5d3:	 call	 0xf6ffd694
+// 0xf6ffd5d8:	 add	 eax, 0x1a28
+// 0xf6ffd5dd:	 mov	 eax, dword ptr [ebp + 8]
+// 0xf6ffd5e0:	 pop	 ebp
+// 0xf6ffd5e1:	 ret	 
