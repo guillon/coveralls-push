@@ -2,7 +2,8 @@ coveralls-push utility
 ======================
 
 Push coverage results to coveralls, the coverages pushed are
-available at coveralls URL: https://coveralls.io/github/guillon/coveralls-push
+then available at coveralls URL:
+https://coveralls.io/github/guillon/coveralls-push
 
 Usage
 =====
@@ -10,12 +11,12 @@ Usage
 One can inspect the expected YML file input format at
 https://github.com/guillon/coveralls-push/blob/master/example-hello.yml
 
-Clone this repository or simply get the script file with:
+Clone this repository, or simply get the script file with:
 
     $ curl -o coveralls-push.py https://github.com/guillon/coveralls-push/raw/master/coveralls-push.py
     $ chmod +x coveralls-push.py
 
-Here is for instance a partial content of the exemple:
+Here is for instance a partial content of the example:
 
     $ cat example-hello.yml
     "hello.exe/main":
@@ -39,12 +40,15 @@ For instance, push the example with:
 You can then browse your coverage, here at:
 https://coveralls.io/jobs/25749502
 
-One can push as its own github account login with:
+Note that one must know the coveralls-push password which is requested
+for updating the coverages data repository.
+
+Alternatively, one can push as its own github account login with:
 
     $ env COV_USER=<github_login> ./coveralls-push examples-hello.yml
     ...
-In this case the github user must be a collaborator
-of the coveralls-push repository.
+
+In this case the github user must be a collaborator of the coveralls-push repository.
 
 Refer to github coveralls-push doc at:
 https://guillon.github.io/coveralls-push
