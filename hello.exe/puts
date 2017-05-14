@@ -1,0 +1,4 @@
+// 0000000000000560 <puts@plt>
+0x000560:   ff 25 b2 0a 20 00       jmpq   *0x200ab2(%rip)        # 201018 <puts@GLIBC_2.2.5>
+0x000566:   68 00 00 00 00          pushq  $0x0
+0x000556b:   e9 e0 ff ff ff          jmpq   550 <.plt>
