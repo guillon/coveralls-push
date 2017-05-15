@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 #
-#
-#
 
 from __future__ import print_function
 import sys
@@ -57,13 +55,13 @@ def download_tokens(tokens_enc_url):
     with tempfile.NamedTemporaryFile(delete=False) as infile:
         subprocess.check_call(['curl', '-L', '-s', '-S', '-k', tokens_enc_url], stdout=infile)
         infile.flush()
-        proc = subprocess.Popen(['openssl', 'aes-256-cbc', '-d', '-a', '-pass', 'stdin', '-in', infile.name],
+        proc = subprocess.Popen(['openssl', 'aes-256-cbc', '-d', '-salt', '-md', 'md5', '-a', '-pass', 'stdin', '-in', infile.name],
                                 stdin=subprocess.PIPE,
                                 stdout=subprocess.PIPE,
                                 stderr=subprocess.PIPE)
     (tokens, errors) = proc.communicate(input=key)
     if proc.returncode != 0:
-        logging.error("Could not autheticate, invalid password key")
+        logging.error("Could not authenticate, invalid password key")
         sys.exit(1)
     return tokens
 
