@@ -27,7 +27,7 @@ import json, hashlib, uuid, os, subprocess, logging, base64, getpass, tempfile
 try:
     import yaml
 except:
-    sys.stderr.write("ERROR: please install required packages, for instance:\n")
+    sys.stderr.write("ERROR: some packages are missing. Please install required packages, for instance:\n")
     sys.stderr.write("    sudo apt-get install python-yaml\n")
     sys.exit(1)
 
