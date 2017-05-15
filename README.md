@@ -30,8 +30,7 @@ Here is for instance a partial content of the example:
 For instance, push the example with:
 
     $ ./coveralls-push examples-hello.yml
-    ...
-    Password for 'https://coveralls-push@github.com': <enter here the coveralls-push password>
+    Please provide the password key for coveralls-push: <enter here the expected key>
     ...
     Succesfully pushed coverage
     Identifier: Job #11.1
@@ -40,15 +39,8 @@ For instance, push the example with:
 You can then browse your coverage, here at:
 https://coveralls.io/jobs/25749502
 
-Note that one must know the coveralls-push password which is requested
-for updating the coverages data repository.
-
-Alternatively, one can push as its own github account login with:
-
-    $ env COV_USER=<github_login> ./coveralls-push examples-hello.yml
-    ...
-
-In this case the github user must be a collaborator of the coveralls-push repository.
+Note that the key may have been shared with you previously.
+Otherwise open an issue for instance to get an access.
 
 Refer to github coveralls-push doc at:
 https://guillon.github.io/coveralls-push
