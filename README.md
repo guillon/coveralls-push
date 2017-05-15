@@ -44,5 +44,5 @@ Refer to all pushed covarges on coveralls.io project [coveralls-push](https://co
 
 Refer to github coveralls-push [project page](https://guillon.github.io/coveralls-push).
 
-Refer to github coveralls-push [sources](https://github.com/coveralls-push).
+Refer to github coveralls-push [sources](https://github.com/guillon/coveralls-push).
 
